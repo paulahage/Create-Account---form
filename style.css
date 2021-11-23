@@ -1,0 +1,55 @@
+body {
+  background-color: rgb(222, 245, 139);
+  /* height: 100%; */
+}
+
+.container.backg {
+  background-color: white;
+  border-radius: 10px; 
+}
+
+.link-primary {
+  color: #468bf1;
+}
+
+.container.account {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+@media screen and (max-width:1050px) {
+  .container.account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+.form-control {
+  background-color: #50515215;
+  border: none;
+}
+
+.form-control:valid {
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.274);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.btn.ok {
+  background-color: #468bf1!important;
+  border: none;
+  
+}
+
+.btn.ok:hover {
+  background-color: #0D6EFD!important;  
+}
