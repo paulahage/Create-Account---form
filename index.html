@@ -15,7 +15,6 @@
   </head>
   <body class="container">
     <div class="container backg mt-5 mb-5">
-
       <!--Login-->
       <div class="position-relative">
         <header class="header position-absolute top-0 end-0 p-4">
@@ -23,13 +22,12 @@
           <a href="#" class="link-primary">Login</a>
         </header>
       </div>
-      <!--Image - Title - From-->
+      <!--Image - Title - Form-->
       <div class="container account">
         <img src="welcome.png" class="mt-5 pt-5" />
         <div class="container p-5">
           <h1 class="pb-4 pt-5">Create account</h1>
           <form class="form-group needs-validation" novalidate>
-
             <!--Username-->
             <div class="m-3">
               <label for="name" class="form-label"
@@ -70,6 +68,7 @@
                 id="password"
                 required
               />
+              <div class="invalid-feedback">Please provide a valid password.</div>
             </div>
 
             <!--Checkbox-->
@@ -90,7 +89,7 @@
 
             <!--Submit button-->
             <div class="d-grid gap-2 col-6 mx-auto mt-5">
-              <button class="btn btn-primary ok" type="submit" >
+              <button class="btn btn-primary ok" type="submit">
                 Create account
               </button>
             </div>

@@ -1,21 +1,24 @@
-let submit = document.querySelector('.ok');
+const username = document.getElementById("name");
+const email = document.getElementById("email");
+const password = document.getElementById("password");
+const check = document.getElementById("terms_conditions");
+const form = document.querySelector(".needs-validation");
+const submit = document.querySelector(".ok");
 
-submit.addEventListener("click", cleanBtn);
 
-function cleanBtn() {
+(function () {
+  form.addEventListener(
+    "submit",
+    function (e) {
+      if (!form.checkValidity()) {
+        e.preventDefault();
+        e.stopPropagation();
+      }
 
-  let username = document.getElementById('name');
-  let email = document.getElementById('email');
-  let password = document.getElementById('password');
-  let check = document.getElementById("terms_conditions");
-   
-  if (username.value !== "" && email.value !== "" && password.value !== "" && check.checked !== false ) {
-    username.value = "";
-    email.value = "";
-    password.value = "";
-    check.checked = false
+      form.classList.add("was-validated");
 
-  }    
-  
-}
-
+      
+    },
+    false
+  );
+})();
