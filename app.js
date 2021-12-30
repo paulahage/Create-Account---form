@@ -5,20 +5,33 @@ const check = document.getElementById("terms_conditions");
 const form = document.querySelector(".needs-validation");
 const submit = document.querySelector(".ok");
 
+password.addEventListener("keydown", validatePassword);
+password.addEventListener("blur", validatePassword);
+form.addEventListener("submit", validateForm);
 
-(function () {
-  form.addEventListener(
-    "submit",
-    function (e) {
-      if (!form.checkValidity()) {
-        e.preventDefault();
-        e.stopPropagation();
-      }
+function validatePassword() {
+  const regExp = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&])\S{8,}$/;
 
-      form.classList.add("was-validated");
+  if (!regExp.test(password.value)) {
+    password.classList.add("is-invalid");
+    password.setCustomValidity("OK");
 
-      
-    },
-    false
-  );
-})();
+    return false;
+  } else {
+    password.classList.remove("is-invalid");
+    password.setCustomValidity("");
+    return true;
+  }
+}
+
+function validateForm(e) {
+  const checkFormValidity = form.checkValidity();
+  const checkPasswordValidity = validatePassword();
+
+  if (!checkFormValidity || !checkPasswordValidity) {
+    e.preventDefault();
+    e.stopPropagation();
+  }
+
+  form.classList.add("was-validated");
+}
