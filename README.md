@@ -1,13 +1,26 @@
 # Form - Create Account
 [LOOK HERE!](https://paulahage.github.io/Create-Account---form/)
-<br>
-<br>
-This project is a basic project to exercise my first skills using:<br>
 
-- HTML5
+
+The project consists in a basic form to create an account.
+
+<br/>
+
+⚒️ Technologies used:
+
+- HTML
+- CSS
 - Bootstrap
-- CSS3
-- Javascript
+- JavaScript
 
-Consists in a basic form to create an account.<br>
-It also contains 2 *login* options, one of which is design for using Google data.<br>
+<br/>
+
+🤓 Learning:
+
+- Use of HTML tags
+- CSS Flexbox
+- Use of Bootstrap
+- Form Validation
+- Improving the knowledge of responsiveness with @media
+
+
