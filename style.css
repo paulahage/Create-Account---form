@@ -1,11 +1,10 @@
 body {
   background-color: rgb(222, 245, 139);
-  /* height: 100%; */
 }
 
 .container.backg {
   background-color: white;
-  border-radius: 10px; 
+  border-radius: 10px;
 }
 
 .link-primary {
@@ -15,15 +14,23 @@ body {
 .container.account {
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
+}
+
+.welcome-img {
+  width: 100%;
 }
 
 @media screen and (max-width:1050px) {
   .container.account {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width:550px){
+  .container-form {
+    padding: 0 !important;
+    margin-bottom: 20px;
   }
 }
 
@@ -48,9 +55,9 @@ input:-webkit-autofill:active {
 .btn.ok {
   background-color: #468bf1!important;
   border: none;
-  
+
 }
 
 .btn.ok:hover {
-  background-color: #0D6EFD!important;  
+  background-color: #0D6EFD!important;
 }
