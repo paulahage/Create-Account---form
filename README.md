@@ -4,10 +4,10 @@
 
 ⚒️ Technologies used:
 
-- HTML
-- CSS
-- Bootstrap
-- JavaScript
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [JavaScript](https://www.javascript.com/)
+- [Bootstrap](https://getbootstrap.com/docs/5.2/getting-started/introduction/)
 
 <br/>
 
