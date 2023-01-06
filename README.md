@@ -1,5 +1,9 @@
 # Form - Create Account
 
+This is a personal project developed with the main goal of learning Bootstrap and practice HTML, CSS, JS.<br/>
+
+<br/>
+
 <br/>
 
 ⚒️ Technologies used:
@@ -18,6 +22,19 @@
 - Use of Bootstrap
 - Form Validation
 - Improving the knowledge of responsiveness with @media
+
+
+<br/>
+
+### Running the project:
+
+```
+$ git clone git@github.com:paulahage/Create-Account---form.git
+$ cd website
+$ npm install
+$ npm start
+```
+- You can check the project at http://localhost:3000/
 
 <br/>
 
